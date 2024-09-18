@@ -1,0 +1,221 @@
+/*
+    colors
+        #339989: login btn, login logo, forgot password
+        #D9D9D9: input field background
+        #A38F8F: input field placeholder
+        #FFFFFF: or, Login, horizontal lines
+        #CB958E: register btn, register logo
+        #000000: login tt, register tt
+        #011627: page background
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #F8F8FF;
+}
+#img1 {
+    margin-top: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-family: "Montserrat", system-ui;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+p, input::placeholder, button, a{
+    font-family: "Montserrat", system-ui;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+a {
+    font-size: 12px;
+    color: #339989;
+}
+
+h1, p{
+    color: #ffffff;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 7px;
+    height: 20px;
+    background-color: #D9D9D9 ;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    color: #A38F8F;
+}
+
+#login, #register {
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 100px;
+    height: 27px;
+}
+
+#login {
+    background-color: #339989;
+}
+
+#register {
+    background-color: #CB958E;
+}
+
+
+/* END OF BASE STYLES */
+
+body {
+    display: flex;
+    justify-content: center;
+}
+.main-div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    box-shadow: 15px 15px 4px;
+
+    background-color: #011627;
+    margin-top: 75px;
+    width: 200px;
+}
+
+.h1-login{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#pass {
+    margin-top: 10px;
+}
+
+#forgot-pass {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#or {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+    
+/* place horizontal lines before and after or */
+
+#or:before, #or:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+#or:before {
+    margin-right: 10px
+}
+
+#or:after {
+    margin-left: 10px
+}
+
+#google-sign-in-button {
+    cursor: pointer;
+    transition: background-color .3s, box-shadow .3s;
+        
+    padding: 10px 14px 8px 42px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+}
+
+#google-sign-in-button:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+#google-sign-in-button:active {
+    background-color: #eeeeee;
+}
+
+#google-sign-in-button:active {
+    outline: none;
+        box-shadow: 
+        0 -1px 0 rgba(0, 0, 0, .04),
+        0 2px 4px rgba(0, 0, 0, .25),
+        0 0 0 3px #c8dafc;
+}
+
+
+
+/* SOME SPECIFICS FOR REGISTER PAGE */
+
+
+.main-div-register{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    box-shadow: 15px 15px 4px;
+    
+    background-color: #011627;
+    margin-top: 1px;
+    width: 200px;
+}
+
+#img2 {
+    margin-top: 30px;
+    height: 50px;
+}
+
+.h1-register {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+label {
+    columns: #ffffff;
+    font-family: "Montserrat", system-ui;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg-but {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+.already-mem {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 10px;
+}
